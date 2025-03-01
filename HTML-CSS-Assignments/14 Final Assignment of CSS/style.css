@@ -1,0 +1,1186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+*::selection {
+  background: var(--defGreyDark);
+}
+
+/* repeated colours and values are decleared in variables */
+:root {
+  --defGreen: #668d1a;
+  --defGreen2: #8ec63f;
+  --defBlack: #212121;
+  --defYellow: #febd19;
+  --defGrey: #f2f2f2;
+  --defGreyDark: #5e5e5e;
+  --defred: #ef4136;
+  --deforange: #fe831e;
+  --defWhite: #ffffff;
+  --defTextColor: #c1c2c5;
+  --defOrange2: #ff841d;
+}
+
+/* sample image 01  */
+.sample {
+  position: absolute;
+  z-index: -2;
+}
+.sample .on {
+  width: 100%;
+}
+
+.website {
+  width: 100%;
+  font-family: "Noto Sans Warang Citi", sans-serif; 
+}
+/* ------------------------------------------------------------------ */
+/* header styling  */
+header {
+  width: 100%;
+}
+
+/* header black portion start */
+.black {
+  width: 100%;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--defBlack);
+}
+
+/* left side of header black portion */
+.bleft {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.bleft img {
+  width: 38px;
+}
+
+/* right side of header black portion */
+.bright {
+  width: 540px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bright .phone {
+  display: flex;
+  align-items: center;
+  color: var(--defWhite);
+  font-size: 20px;
+  gap: 2px solid red;
+}
+
+.bright .phone img {
+  width: 20px;
+}
+
+.button button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+}
+
+.bright .btn-sm button {
+  font-size: 11px;
+  font-weight: 700;
+  background-color: #a2d84b;
+  border-bottom: 2px solid red solid var(--defGreen);
+}
+/* header black portion end */
+
+/* header white portion start */
+.white {
+  width: 100%;
+  height: 84px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px;
+  background-color: var(--defWhite);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.white .logo img {
+  width: 150px;
+}
+
+/* white portion navigation styling  */
+.white .nav ul {
+  display: flex;
+  list-style: none;
+  gap: 21px;
+  height: 6vh;
+  width: 62vw;
+  padding-top: 15px;
+}
+
+.nav ul li {
+  position: relative;
+}
+
+/* nav hover effect */
+.nav ul li::after {
+  content: "";
+  position: absolute;
+  background-color: var(--defYellow);
+  left: 0;
+  height: 8px;
+  width: 0;
+  bottom: -30px;
+}
+
+.nav ul li:hover {
+  font-weight: 700;
+}
+
+.nav ul li:hover::after {
+  width: 100%;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: var(--defBlack);
+}
+/* header white portion end */
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* main  */
+
+/* section one  */
+main .one img {
+  width: 100%;
+  height: 524px;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* slider image content  */
+.content {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top: 163px;
+  left: 0;
+}
+
+/* content 01 */
+/* upper content 01 */
+.upper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* uper content sidebars   */
+.upper .greenbar {
+  width: 365px;
+  height: 74px;
+  background-color: var(--defGreen2);
+}
+/* upper content main text  */
+.upper .main {
+  text-align: center;
+  width: 641px;
+  font-size: 77px;
+  font-weight: bold;
+  color: var(--defWhite);
+}
+
+/* content 02 sample text */
+.content .mid {
+  text-align: center;
+  width: 926px;
+  margin: auto;
+  font-size: 21px;
+  font-weight: 600;
+  color: white;
+}
+
+/* content 03 button */
+.content .last {
+  text-align: center;
+  margin-top: 25px;
+}
+.content .last button {
+  padding: 10px 45px;
+  border: none;
+  border-bottom: 3px solid #fe831c;
+  border-radius: 8px;
+  background-color: var(--defYellow);
+  font-size: larger;
+  font-weight: 500;
+}
+/* section one end  */
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* section two start */
+main .two {
+  width: 100%;
+  background-color: var(--defWhite);
+}
+
+.advantage {
+  padding-top: 28px;
+  text-align: center;
+  height: 138px;
+  width: 100%;
+}
+
+.advantage h1 {
+  font-weight: 700;
+  font-size: 46px;
+}
+
+/* green span  */
+.greenspan {
+  color: var(--defGreen);
+}
+
+.advantage p {
+  font-weight: 700;
+  width: 599px;
+  margin: auto;
+  color: var(--defTextColor);
+}
+
+/* for circle boxes section styling  */
+.catagories {
+  width: 100%;
+  height: 353px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.catagories .box {
+  width: 224px;
+  height: 349px;
+}
+
+/* circle boxes */
+.catagories .box .coins {
+  margin: auto;
+  width: 170px;
+  height: 170px;
+  background-color: var(--defGrey);
+  border-radius: 50%;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* circle  boxes lower text and heading */
+.box .text {
+  text-align: center;
+  padding-top: 25px;
+}
+.box .text p {
+  font-weight: 500;
+  line-height: 13px;
+  color: var(--defTextColor);
+}
+/* section two end */
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* section three start */
+main .three {
+  width: 100%;
+}
+
+main .three img {
+  position: absolute;
+  z-index: -1;
+}
+
+.three .aboutHeading {
+  text-align: center;
+  padding-top: 28px;
+}
+
+.three .aboutHeading h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.three .about-box {
+  width: 40%;
+  height: 400px;
+  color: var(--defBlack);
+  text-align: left;
+  margin-left: 81px;
+  padding-top: 14px;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.about-box button {
+  padding: 15px 53px;
+  font-weight: 600;
+  background-color: var(--defYellow);
+  border: none;
+  border-bottom: 3px solid #fe831e;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+/* section three end */
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* section four start */
+
+main .four {
+  width: 100%;
+  height: 473px;
+  background-color: var(--defWhite);
+}
+.four .serviceHeading {
+  text-align: center;
+  padding-top: 34px;
+  width: 100%;
+  height: 130px;
+}
+
+.four .serviceHeading h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.four .serviceHeading p {
+  font-weight: 700;
+  width: 570px;
+  margin: auto;
+  color: var(--defTextColor);
+  letter-spacing: 0.2px;
+  line-height: 15px;
+}
+
+.four .serviceCards {
+  background-color: var(--defWhite);
+  width: 100%;
+  height: 344px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 12px;
+}
+
+.serviceCards .cardOne {
+  width: 278px;
+  height: 214px;
+  background-color: var(--defGrey);
+  border: none;
+  border-radius: 5px;
+}
+
+.cardOne .star {
+  position: relative;
+  top: -37px;
+  left: 100px;
+}
+
+.cardOne .star img {
+  width: 70px;
+}
+.cardOne .text {
+  text-align: center;
+}
+.cardOne .text p {
+  font-weight: 700;
+  width: 225px;
+  margin: auto;
+  color: var(--defTextColor);
+  line-height: 15px;
+  padding-bottom: 6px;
+}
+
+.cardOne .text a {
+  font-size: 21px;
+  letter-spacing: -1px;
+  color: var(--defGreen2);
+}
+/* section four end */
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* section five start */
+/* black section  */
+main .five {
+  width: 100%;
+  background-color: var(--defBlack);
+}
+
+/* portfoli section upper content  */
+.five .portfolio {
+  padding-top: 33px;
+  text-align: center;
+  height: 138px;
+  width: 100%;
+}
+
+.portfolio h1 {
+  font-weight: 700;
+  font-size: 46px;
+  color: var(--defWhite);
+}
+
+.portfolio p {
+  font-weight: 700;
+  width: 599px;
+  margin: auto;
+  color: var(--defTextColor);
+  line-height: 17px;
+}
+
+/* portfolio lower content  */
+.five .pf-box {
+  height: 595px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.pf-box ul {
+  padding-top: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--defWhite);
+  list-style: none;
+  font-weight: 400;
+  font-size: larger;
+  gap: 34px;
+  margin-bottom: 13px;
+}
+
+
+.pf-box ul li:hover {
+  color: var(--defOrange2);
+  font-weight: 700;
+}
+
+/* portfolio logo box  */
+.pf-box .logobox {
+  width: 1165px;
+  height: 468px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logobox .logo-img {
+  width: 232px;
+  height: 232px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* logo box different background colors as provioded in Assignment  */
+.whitebox {
+  background-color: var(--defWhite);
+}
+
+.darkgreybox {
+  background-color: var(--defGreyDark);
+}
+
+.grey {
+  background-color: #a3a3a3;
+}
+
+.light-grey {
+  background-color: #d2d3d5;
+}
+
+/* logo box red background color on hover   */
+.logobox .logo-img:hover {
+  background-color: var(--defred);
+}
+
+/* section five end  */
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* section six start */
+main .six {
+  width: 100%;
+  background-color: var(--defWhite);
+}
+
+/* process icon inside content  */
+.process-heading {
+  padding-top: 68px;
+  text-align: center;
+  height: 180px;
+  width: 100%;
+}
+
+.process-heading h1 {
+  font-weight: 700;
+  font-size: 46px;
+}
+
+.process-heading p {
+  font-weight: 700;
+  width: 599px;
+  margin: auto;
+  color: var(--defTextColor);
+}
+
+/* lower pox of process section ontains circle icon  */
+.six .processbox {
+  width: 100%;
+  height: 323px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 54px;
+}
+
+/* process boxes whic contains circles and text content  */
+.processbox .process-content {
+  width: 151px;
+  height: 320px;
+  padding-top: 37px;
+  position: relative;
+}
+
+/* main process section circle  */
+.process-content .processcircle {
+  border: 4px solid var(--defTextColor);
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* number img div over circles  */
+.processcircle .number {
+  width: 48px;
+  position: absolute;
+  top: 15px;
+  left: 50px;
+}
+
+/* number images  */
+.processcircle .number img {
+  width: 46px;
+}
+
+/* circle icon inside content  */
+.process-content .processtext {
+  width: 147px;
+  height: 65px;
+  margin-top: 19px;
+  text-align: center;
+}
+
+.processtext h3 {
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
+.processtext p {
+  font-weight: 500;
+  line-height: 13px;
+  color: var(--defTextColor);
+}
+
+/* mid bar between circles  */
+.process-content .bar {
+  width: 60px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  top: 111px;
+  right: -57px;
+  background-color: var(--defTextColor);
+}
+
+/* section six end  */
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* section seven start */
+
+main .seven {
+  width: 100%;
+  /* height: 545px; */
+  background-color: var(--defGrey);
+}
+
+.seven .reviews-heading {
+  padding-top: 35px;
+  text-align: center;
+  height: 167px;
+  width: 100%;
+}
+
+.reviews-heading h1 {
+  font-weight: 700;
+  font-size: 46px;
+}
+
+.reviews-heading p {
+  font-weight: 700;
+  width: 599px;
+  margin: auto;
+  color: var(--defTextColor);
+  line-height: 15px;
+}
+
+/* profile section  */
+.seven .profilebox {
+  margin: auto;
+  width: 1180px;
+  height: 296px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  gap: 20px 120px;
+  position: relative;
+}
+
+/* main profile box  */
+.profilebox .profile-content {
+  width: 512px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+/* profile image div  */
+.profile-content .profile {
+  width: 107px;
+  height: 107px;
+}
+.profile img {
+  width: 103px;
+}
+
+/* user review box  */
+.profile-content .user-info {
+  width: 378px;
+  height: 75px;
+  font-weight: 600;
+  line-height: 12px;
+  padding-left: 6px;
+  font-size: 15px;
+}
+
+/* mid sepration line  */
+.sepration {
+  position: absolute;
+  background-color: var(--defTextColor);
+  width: 100%;
+  height: 2px;
+}
+.sepration2 {
+  position: absolute;
+  background-color: var(--defTextColor);
+  height: 100%;
+  width: 2px;
+}
+
+/* small colourfull circles */
+.seven .colors {
+  height: 79px;
+  width: 68px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.colors .color {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+}
+
+.colors .orange {
+  background-color: var(--deforange);
+}
+.colors .yellow {
+  background-color: var(--defYellow);
+}
+
+/* section seven end  */
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* section eight start */
+main .eight {
+  width: 100%;
+  background-color: var(--defWhite);
+}
+
+/* upper heading portion of progress section  */
+.eight .skills-heading {
+  padding-top: 35px;
+  text-align: center;
+  height: 135px;
+  width: 100%;
+}
+
+.skills-heading h1 {
+  font-weight: 700;
+  font-size: 46px;
+}
+
+.skills-heading p {
+  font-weight: 700;
+  width: 599px;
+  margin: auto;
+  color: var(--defTextColor);
+  line-height: 15px;
+}
+
+/* lower portion of progress section */
+.eight .skillcontainer{
+  height: 355px;
+  width: 100%;
+}
+
+/* progress circle container  */
+.skillcontainer .progressbox {
+  width: 973px;
+  height: 351px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* progress circle box  */
+.progressbox .prog-card {
+  width: 190px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* for yellow circle  */
+.prog-card .yellow {
+  border: 4px solid var(--defOrange2);
+  width: 172px;
+  height: 172px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.yellow .lightyellow {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(transparent 0%, transparent 55%, var(--defYellow) 55%, var(--defYellow) 100%);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightyellow .innercircle {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--defOrange2);
+  background-color: var(--defWhite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* for red circle  */
+.prog-card .lightred {
+  border: 4px solid #ed7b75;
+  width: 172px;
+  height: 172px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.lightred .red {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(transparent 33%, var(--defred) 33%, var(--defred) 55%, var(--defred) 100%);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.red .innercircle {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--defred);
+  background-color: var(--defWhite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* for green circle  */
+.prog-card .green {
+  border: 4px solid var(--defGreen);
+  width: 172px;
+  height: 172px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.green .lightgreen {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(transparent 25%, var(--defGreen2) 25%, var(--defGreen2) 55%, var(--defGreen2) 100%);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lightgreen .innercircle {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--defGreen);
+  background-color: var(--defWhite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* for black circle  */
+.prog-card .lightblack {
+  border: 4px solid var(--defTextColor);
+  width: 172px;
+  height: 172px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.lightblack .black {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(transparent 15%, var(--defBlack) 15%, var(--defBlack) 55%, var(--defBlack) 100%);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.black .innercircle {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--defBlack);
+  background-color: var(--defWhite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* content below the circle   */
+.prog-card .prog-content {
+  margin-top: 28px;
+  width: 100%;
+  text-align: center;
+  height: 38px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+
+/* section eight end  */
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* new project form section start */
+
+
+main .start {
+  width: 100%;
+  background-color: var(--defGreen2);
+}
+
+/* upper heading portion of new project section  */
+.start .newproject{
+  padding-top: 40px;
+  text-align: center;
+  height: 135px;
+  width: 100%;
+  color: var(--defWhite);
+}
+
+.newproject h1 {
+font-size: 70px;
+font-weight: 700;
+}
+
+
+/* project request form portion  */
+.start .form {
+  padding-top: 22px;
+  width: 100%;
+  height: 210px;
+  text-align: center;
+}
+
+.form input {
+  width: 247px;
+  height: 50px;
+  margin-right: 18px;
+  border-radius: 6px;
+  border: none;
+  padding: 24px;
+  font-size: 20px;
+}
+
+
+
+.form button {
+  padding: 8px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: var(--defYellow);
+  border: none;
+  border-bottom: 3px solid #fe831e;
+  border-radius: 5px;
+}
+
+.form p {
+  padding-top: 36px;
+  font-weight: 700;
+  width: 750px;
+  margin: auto;
+  color: var(--defWhite);
+  line-height: 15px;
+}
+
+
+/* section eight end  */
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* section nine start */
+
+
+main .nine {
+  width: 100%;
+  height: 650px;
+  background-color: var(--defWhite);
+}
+
+/* upper heading portion of progress section  */
+.nine .contact-heading {
+  padding-top: 35px;
+  text-align: center;
+  height: 135px;
+  width: 100%;
+}
+
+.contact-heading h1 {
+  font-weight: 700;
+  font-size: 46px;
+}
+
+.contact-heading p {
+  font-weight: 700;
+  width: 599px;
+  margin: auto;
+  color: var(--defTextColor);
+  line-height: 15px;
+}
+
+
+
+
+.location{
+  width: 100%;
+  height: 513px;
+}
+
+
+.location .loc-info {
+  width: 978px;
+  height: 134px;
+  margin: auto;
+  padding-top: 15px;
+}
+.loc-info .address{
+  font-size: 25px;
+  font-weight: 500;
+}
+.address img{
+  width: 32px;
+}
+
+.loc-info .connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.connect .phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 500;
+  gap: 25px;
+}
+
+.phone img{
+  width: 25px;
+}
+
+.location .map{
+  width: 100%;
+  height: 375px;
+}
+ 
+.map iframe{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* section nine end  */
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* footer start */
+
+
+body footer {
+  width: 100%;
+  /* height: 370px; */
+  padding: 55px 88px;
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  background-color: var(--defGreen);
+}
+
+/* panacloud image portion  */
+footer .first-footer {
+  width: 235px;
+  height: 252px;
+  color: var(--defWhite);
+}
+.first-footer img{
+  width: 150px;
+}
+
+.first-footer p {
+  margin-top: 12px;
+  font-size: medium;
+  font-weight: 700;
+  line-height: 15px;
+  margin-bottom: 28px;
+}
+.first-footer .copy {
+  font-size: x-large;
+  font-weight: 400;
+  letter-spacing: -2px;
+  padding-left: 8px;
+}
+
+/* services and contact portion */
+footer .sec-footer {
+  display: grid;
+  grid-template-columns: 271px 295px 234px;
+  height: 252px;
+}
+
+.sec-footer .anker-foot {
+  width: 236px;
+  height: 250px;
+  color: var(--defWhite);
+  font-size: medium;
+  font-weight: 500;
+}
+.sec-footer .both{
+  border-right: 1px solid var(--defGreen2);
+}
+
+.anker-foot h3{
+  margin-top: -9px;
+  color: var(--defWhite);
+}
+
+.anker-foot ul {
+  list-style: none;
+  margin-top: 21px;
+  padding-left: 2px;
+}
+.anker-foot ul li a{
+ color: var(--defWhite);
+
+}
+.anker-foot div img{
+  width: 16px;
+
+}
+
+.anker-foot .follow {
+  padding: 52px 9px 0px;
+  font-size: x-large;
+   font-weight: 700;
+}
+.anker-foot .follow img{
+  width: 37px;
+}
