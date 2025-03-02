@@ -125,14 +125,24 @@ main .package {
     color: #6c6b6b;
     padding-bottom: 7px;
     font-weight: 700;
+    position: relative;
 }
+.features ul li img{
+  width: 9px;
+  position: absolute;
+  right: -12px;
+}
+
+
 .features ul strong {
     font-weight: 900;
 }
 
 .card-lower .order-btn {
-    position: relative;
-    top: 47px;
+  position: absolute;
+  top: 339px;
+  /* bottom: 368px; */
+  left: 89px;
   }
 .order-btn button{
     padding: 8px 18px;
@@ -144,6 +154,7 @@ main .package {
     box-shadow: inset -1px 1px 0px white;
     background-color: #0685f6;
     color: white;
+    cursor: pointer;
   }
 
   .card-upper p{
@@ -155,6 +166,8 @@ main .package {
     padding-top: 10px;
 }
 
+
+/* lower green button  */
 .view-btn button {
     padding: 8px 62px;
     font-size: 11px;
@@ -165,9 +178,6 @@ main .package {
     border-top: 1px solid #8ace08;
     border-right: 1px solid #8ace08;
     box-shadow: inset -1px 1px 0px white;
+    cursor: pointer;
 }
 
-
-
-
-/* on hover card bgc #245677 */
